@@ -22,6 +22,10 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .big-container {
   max-width: 1220px;
   margin: 0 auto;
@@ -59,6 +63,11 @@ body {
   display: flex;
   gap: 0 40px;
   padding-top: 25px;
+}
+
+.menu-mobile,
+.menu-btn {
+  display: none;
 }
 
 .menu-left {
@@ -503,4 +512,250 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .promo {
+    background-position: left center;
+  }
+  .nav {
+    align-items: center;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+    gap: 0 20px;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
+    font-size: 42px;
+  }
+  .subtitle span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 969px) {
+  .evo-white__inner::after {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .menu-mobile.menu--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000e6;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    padding-top: 140px;
+  }
+  .menu-link {
+    font-size: 3vh;
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+  }
+  .logo {
+    z-index: 10;
+  }
+  .info__part-textbox {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .info__part {
+    display: block;
+  }
+  .info__part--second .info__text,
+  .info__part--third .info__text {
+    max-width: 100%;
+  }
+  .info__table,
+  .info__part-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog__quote {
+    flex-direction: column;
+  }
+  .blog__quote-box {
+    flex-basis: auto;
+  }
+  .blog__quote-img {
+    order: -1;
+  }
+  .blog__item-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 669px) {
+  .evo {
+    margin-bottom: 50px;
+  }
+  .evo-black {
+    padding: 60px 0 5px;
+  }
+  .evo-white__inner::before {
+    display: none;
+  }
+  .evo-black__info {
+    display: block;
+  }
+  .evo-black__title {
+    margin-bottom: 30px;
+  }
+  .evo-white__text {
+    margin-bottom: 15px;
+  }
+  .evo-white__text:first-child {
+    max-width: 100%;
+  }
+  .evo-white__text:nth-child(2) {
+    max-width: 100%;
+  }
+  .evo-white__text:nth-child(3) {
+    max-width: 100%;
+  }
+  .evo-white__inner {
+    padding-top: 60px;
+  }
+  .evo-white__video {
+    margin-top: 60px;
+  }
+  .evo__descr-list {
+    display: block;
+    text-align: center;
+  }
+  .evo__descr-list div {
+    margin-bottom: 15px;
+  }
+  .blog__slider {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  .blog {
+    margin-bottom: 30px;
+  }
+  .footer {
+    padding: 50px 0 30px;
+  }
+  .footer__top {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 34px;
+  }
+  .subtitle span {
+    font-size: 26px;
+  }
+  .info__title,
+  .evo-black__title,
+  .blog__title,
+  .footer__title {
+    margin-bottom: 20px;
+  }
+  .info__part {
+    padding-top: 70px;
+  }
+  .info__table td:nth-child(2) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .track__title {
+    padding-bottom: 20px;
+  }
+  .evo-black__inner::after,
+  .evo-black__inner::before {
+    display: none;
+  }
+  .evo-black__img {
+    margin: 90px auto 50px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__logo {
+    order: -1;
+  }
+}
+
+@media (max-width: 340px) {
+  .title {
+    font-size: 42px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .info__part {
+    padding-top: 50px;
+  }
+  .info__text,
+  .evo-black__text {
+    margin-bottom: 15px;
+  }
+  .info__title,
+  .evo-black__title,
+  .blog__title,
+  .footer__title {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .info {
+    margin-bottom: 70px;
+  }
+  .track__title {
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .evo-black {
+    padding: 50px 0 5px;
+  }
+  .evo-black__img {
+    margin: 30px auto 20px;
+  }
+  .evo__descr-list {
+    font-size: 12px;
+  }
 }
